@@ -1,0 +1,95 @@
+{
+    head:[
+        {id:"姓名",				width:80,	type:"ed",			align:"left",   sort:"str",	value:"姓名"},
+        {id:"性别",				width:60,	type:"coro",		align:"left",   sort:"str", value:"性别", options:[
+			{ id:"男",			value:"男"},
+			{ id:"女",			value:"女"}
+		]},
+        {id:"电话",     		width:130,	type:"ed",			align:"left",   sort:"str", value:"电话"},
+        {id:"证件类型", 		width:100,	type:"coro",		align:"left",	sort:"str", value:"证件类型", options:[
+			{ id:"身份证",		value:"身份证"},
+			{ id:"护照",		value:"护照"},
+			{ id:"港澳通行证",	value:"港澳通行证"},
+			{ id:"军官证",		value:"军官证"},
+			{ id:"其他",		value:"其他"}
+		]},
+        {id:"证件号",   		width:160,	type:"ed",			align:"left",	sort:"str", value:"证件号"},
+        {id:"项目",     		width:80,	type:"coro",		align:"left",	sort:"str", value:"项目", options:[
+			{ id:"T",			value:"T"},
+			{ id:"W",			value:"W"},
+			{ id:"C",			value:"C"},
+			{ id:"J",			value:"J"},
+			{ id:"其他",		value:"其他"}
+		]},
+        {id:"指定医生",			width:80,	type:"ed",			align:"left",   sort:"str",	value:"指定医生"},
+        {id:"团检客户单位名称", width:130,	type:"ed",			align:"left",   sort:"str", value:"团检客户单位名称"},
+        {id:"开票名称",			width:130,	type:"ed",			align:"left",   sort:"str", value:"开票名称"},
+        {id:"税号",				width:130,	type:"ed",			align:"left",   sort:"str", value:"税号"},
+        {id:"发票内容",			width:130,	type:"coro",		align:"left",   sort:"str", value:"发票内容", options:[
+			{ id:"医疗服务费",	value:"医疗服务费"},
+			{ id:"检查费",		value:"检查费"},
+			{ id:"不开发票",	value:"不开发票"}
+		]},
+        {id:"交付方式",			width:130,	type:"coro",		align:"left",   sort:"str", value:"交付方式", options:[
+			{ id:"邮寄",		value:"邮寄"},
+			{ id:"前台自取",	value:"前台自取"}
+		]},
+        {id:"邮寄地址及电话",	width:130,	type:"ed",			align:"left",   sort:"str", value:"邮寄地址及电话"},
+        {id:"发票日期",			width:130,	type:"dhxCalendar",	align:"left",   sort:"date",value:"发票日期"},
+        {id:"快递号",			width:130,	type:"ed",			align:"left",   sort:"str", value:"快递号"},
+        {id:"付款方式",			width:130,	type:"coro",		align:"left",   sort:"str", value:"付款方式", options:[
+			{ id:"刷卡-POS机",	value:"刷卡-POS机"},
+			{ id:"扫码-微信",	value:"扫码-微信"},
+			{ id:"扫码-Alipay",	value:"扫码-Alipay"},
+			{ id:"电汇",		value:"电汇"},
+			{ id:"Alipay帐号",	value:"Alipay帐号"},
+			{ id:"其他",		value:"其他"}
+		]},
+        {id:"付款日期",			width:130,	type:"dhxCalendar",	align:"left",   sort:"date",value:"付款日期"},
+        {id:"首付款金额",		width:130,	type:"edn",			align:"left",   sort:"int", value:"首付款金额"},
+        {id:"尾款金额",			width:130,	type:"edn",			align:"left",   sort:"int", value:"尾款金额"},
+        {id:"费用类别",			width:130,	type:"coro",		align:"left",   sort:"str", value:"费用类别", options:[
+			{ id:"检前全款",	value:"检前全款"},
+			{ id:"首付款",		value:"首付款"},
+			{ id:"尾款",		value:"尾款"},
+			{ id:"评估费",		value:"评估费"},
+			{ id:"息肉1",		value:"息肉1"},
+			{ id:"息肉2",		value:"息肉2"},
+			{ id:"其他",		value:"其他"}
+		]},
+        {id:"收款人",			width:130,	type:"ed",			align:"left",   sort:"str", value:"收款人"},
+        {id:"转账业务确认号",	width:130,	type:"ed",			align:"left",   sort:"str", value:"转账业务确认号"},
+        {id:"客源",				width:80,	type:"coro",		align:"left",   sort:"str", value:"客源", options:[
+			{ id:"个检",		value:"个检"},
+			{ id:"团检",		value:"团检"},
+			{ id:"转诊",		value:"转诊"},
+			{ id:"其他",		value:"其他"}
+		]},
+        {id:"客户年限",			width:80,	type:"coro",		align:"left",   sort:"str", value:"客户年限", options:[
+			{ id:"N1",			value:"N1"},
+			{ id:"N2",			value:"N2"},
+			{ id:"N3",			value:"N3"},
+			{ id:"N4",			value:"N4"},
+			{ id:"N5",			value:"N5"}
+		]},
+        {id:"销售顾问",			width:130,	type:"ed",			align:"left",   sort:"str", value:"销售顾问"},
+        {id:"转诊医生",			width:130,	type:"ed",			align:"left",   sort:"str", value:"转诊医生"},
+        {id:"备注",				width:130,	type:"ed",			align:"left",   sort:"str", value:"备注"},
+        {id:"上次体检机构",		width:130,	type:"ed",			align:"left",   sort:"str", value:"上次体检机构"},
+        {id:"上次体检时间",		width:130,	type:"dhxCalendar",	align:"left",   sort:"date",value:"上次体检时间"},
+        {id:"上次胃肠镜机构",	width:130,	type:"ed",			align:"left",   sort:"str", value:"上次胃肠镜机构"},
+        {id:"上次胃肠镜时间",	width:130,	type:"dhxCalendar",	align:"left",   sort:"date",value:"上次胃肠镜时间"},
+        {id:"联系人姓名",		width:130,	type:"ed",			align:"left",   sort:"str", value:"联系人姓名"},
+        {id:"联系人电话",		width:130,	type:"ed",			align:"left",   sort:"str", value:"联系人电话"},
+        {id:"变更情况",			width:80,	type:"coro",		align:"left",   sort:"str", value:"变更情况", options:[
+			{ id:"T-C",			value:"T-C"},
+			{ id:"T-W",			value:"T-W"},
+			{ id:"W-T",			value:"W-T"},
+			{ id:"C-T",			value:"C-T"},
+			{ id:"W-C",			value:"W-C"},
+			{ id:"C-W",			value:"C-W"}
+		]},
+        {id:"变更金额",			width:100,	type:"edn",			align:"left",   sort:"int", value:"变更金额"}
+	],
+	rows: []
+}
