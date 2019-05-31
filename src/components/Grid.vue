@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div ref="grid" style="width:100%"></div>
-		<v-snackbar v-model="snackbar" color="warning" top>请填写必要信息</v-snackbar>
+		<v-snackbar v-model="snackbar" color="warning" :timeout="3000" top>请填写必要信息</v-snackbar>
 	</div>
 </template>
 
@@ -68,6 +68,13 @@
 				mygrid.addRow(uid, ",,,,");
 				dp.setUpdated(uid);
 				dp.setUpdateMode("off", false);
+				return true;
+			},
+			del() {
+				if (dp.getSyncState() === false) {
+					return false;
+				}
+				mygrid.deleteSelectedRows();
 				return true;
 			},
 			save() {
