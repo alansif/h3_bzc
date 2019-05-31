@@ -28,7 +28,10 @@
 			mygrid.enableAutoHeight(true);
 			mygrid.setDateFormat("%Y/%m/%d", "%Y/%m/%d");
 			mygrid.setNumberFormat("0,000.00");
-			mygrid.load('cols.json', 'json');
+			mygrid.load('cols.json', function(){
+				let ht = mygrid.cellType.map(v => v === "coro" ? "#select_filter" : "#text_filter");
+				mygrid.attachHeader(ht.join());
+			},'json');
 			mygrid.init();
 			mygrid.load("/api/data", "js");
 			dp = new dataProcessor("/api/data");
