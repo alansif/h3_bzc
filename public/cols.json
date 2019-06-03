@@ -81,6 +81,7 @@
         {id:"上次胃肠镜时间",	width:130,	type:"dhxCalendar",	align:"left",   sort:"date",value:"上次胃肠镜时间"},
         {id:"联系人姓名",		width:130,	type:"ed",			align:"left",   sort:"str", value:"联系人姓名"},
         {id:"联系人电话",		width:130,	type:"ed",			align:"left",   sort:"str", value:"联系人电话"},
+        {id:"与受检人关系",		width:130,	type:"ed",			align:"left",   sort:"str", value:"与受检人关系"},
         {id:"变更情况",			width:80,	type:"coro",		align:"left",   sort:"str", value:"变更情况", options:[
 			{ id:"T-C",			value:"T-C"},
 			{ id:"T-W",			value:"T-W"},

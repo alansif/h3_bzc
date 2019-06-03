@@ -74,6 +74,7 @@ export default {
 		return {
 				items: [
 					{ title: '编辑', icon: 'edit', route: '/' },
+					{ title: '导入', icon: 'open_in_browser', route: '/importer' },
 					{ title: '日志', icon: 'history', route: '/logs' }
 				],
 				username: ''

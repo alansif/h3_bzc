@@ -14,6 +14,11 @@ export default new Router({
       component: Home
     },
     {
+      path: '/importer',
+      name: 'importer',
+      component: () => import('./views/Importer.vue')
+    },
+    {
       path: '/logs',
       name: 'logs',
       // route level code-splitting
