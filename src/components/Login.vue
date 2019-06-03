@@ -25,6 +25,19 @@
 
 <script>
 export default {
+/*
+	props: {
+		showdlg: {
+			type: Boolean,
+			default: true
+		}
+	},
+	watch: {
+		dialog() {
+			this.dialog = this.showdlg;
+		}
+	},
+*/
 	data() {
 		return {
 			dialog: true,
@@ -43,6 +56,10 @@ export default {
 		}
 	},
 	methods: {
+		show() {
+			this.$refs.form.reset();
+			this.dialog = true;
+		},
 		login() {
 			this.authed = true;
 			this.svrok = true;

@@ -11,10 +11,21 @@
 				target="_blank"
 			>
 -->
-
-			<v-btn flat>
-				<span class="mr-2">{{ username }}</span>
-			</v-btn>
+			<v-menu offset-y>
+				<template v-slot:activator="{ on }">
+					<v-btn flat>
+						<span class="mr-2" v-on="on">{{ username }}</span>
+					</v-btn>
+				</template>
+				<v-list dense>
+					<v-list-tile @click="$refs.chgpassdlg.show()">
+						<v-list-tile-title>修改密码</v-list-tile-title>
+        			</v-list-tile>
+					<v-list-tile @click="$refs.logindlg.show()">
+						<v-list-tile-title>登出</v-list-tile-title>
+        			</v-list-tile>
+    			</v-list>
+			</v-menu>
 		</v-toolbar>
 
 		<v-navigation-drawer app clipped permanent width="160">
@@ -39,7 +50,8 @@
 		</v-navigation-drawer>
 
 		<v-content>
-		<Login></Login>
+			<Login ref="logindlg"></Login>
+			<Chgpass ref="chgpassdlg"></Chgpass>
 <!--			<v-container fluid>  -->
 				<transition name="fade">
 					<router-view></router-view>
@@ -52,9 +64,11 @@
 
 <script>
 import Login from './components/Login'
+import Chgpass from './components/Chgpass'
 export default {
 	components: {
-		Login
+		Login,
+		Chgpass
 	},
 	data () {
 		return {
