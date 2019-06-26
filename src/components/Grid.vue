@@ -26,7 +26,7 @@
 			mygrid = new dhtmlXGridObject(this.$refs.grid);
 			mygrid.setImagePath("codebase/imgs/");
 			mygrid.enableAutoHeight(true);
-			mygrid.setDateFormat("%Y/%m/%d", "%Y/%m/%d");
+			mygrid.setDateFormat("%Y-%m-%d", "%Y-%m-%d");
 			mygrid.setNumberFormat("0,000.00");
 			mygrid.load('cols.json', function(){
 				let ht = mygrid.cellType.map(v => v === "coro" ? "#select_filter" : "#text_filter");
